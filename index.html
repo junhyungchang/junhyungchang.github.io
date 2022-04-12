@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Junhyung Chang</title>
+<link rel="icon" type="image/x-icon" href="/images/icon.ico">
+<meta charset="UTF-8">
+<meta name="google-site-verification" content="MXcD6uFvSTg5f80noH4HP72Vm7DsSSRoDu-JFTg9hu0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=3">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow: hidden;
+  min-height: 100%;
+  min-height: -webkit-fill-available;
+  min-height: -moz-available;
+  width: 100%;
+  position: fixed;
+}
+
+
+body {
+  margin: 0px;
+  background-color: rgba(193, 154, 107, 0.5);
+  font-family: Helvatica, sans-serif;
+}
+
+a:link, a:visited {
+  color: black;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-style: double;
+}
+
+h1 {
+  margin: 1;
+  font-size: 5vw;
+  line-height: 0.3em;
+}
+
+h3 {
+  margin: 0 0 0 0;
+}
+
+
+.menuframe {
+  overflow: hidden;
+  position: relative;
+}
+
+.menu {
+  background-color: #fff;
+  border: 0px solid;
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+  padding: 3px 0 3px 0;
+  margin-top: 0.5em;
+  margin-bottom: 0.8em;
+  text-align: center;
+  letter-spacing: -0.05em;
+  font-size: 2.7vw;
+  margin-right: 1.5vw;
+}
+
+.menu:hover {
+  background-color:LightGray;
+}
+
+
+.namecol {
+  width: 100%;
+}
+
+.photoframe{
+  background-color: rgba(0,0,185,0);
+}
+
+.photoframe img{
+  display: block;
+}
+
+.photo {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.nametag {
+  padding: 0 0 0 0;
+  text-align: center;
+}
+
+.intro {
+  padding: 0 0 0 0;
+  font-size: 3vw;
+}
+
+.info {
+  margin-bottom: 0px;
+  padding: 8px 8px 0px 8px;
+  min-height: 100%;
+}
+
+.main {
+  background-color: #fff;
+  border: 0px solid;
+  border-radius: 0px;
+  padding: 10px 10px 10px 10px;
+  margin: 0px;
+  font-size: 15px;
+  line-height: 1.5;
+  height: 90vh;
+  overflow: auto;
+  position: relative;
+}
+
+.datetag {
+  position: absolute;
+  right: 10px;
+}
+
+/* table attributes */
+table {
+  border-collapse: collapse;
+  }
+td, th {
+  border-bottom: 1px solid #dddddd;
+  text-align: left;
+  padding: 3px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #acacac; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888; 
+}
+
+/* horizontal rule attributes*/
+hr {
+  border-width: 1px;
+}
+
+/* list attributes*/
+ul {
+ margin: 0 0 0 20px;
+ padding-left: 0px;
+}
+
+li{
+  margin: 0px 0;
+}
+
+.ul-1 {
+  padding: 5px 0 5px 0;
+}
+
+
+.ul-2 {
+  padding: 20px 0 0 0;
+}
+
+.ul-3 {
+  padding: 0 0 20px 0;
+}
+
+.ul-4 {
+  padding: 20px 0 20px 0;
+}
+
+/* For mobile phones: */
+
+
+[class*="col-"] {
+  float: left;
+}
+.col-1 {width: 100%; margin-bottom: 30px} /* table 1 */
+.col-2 {width: 11.5%;}  /* menu items */
+.col-3 {width: 100%;} /* menuframe */
+.col-4 {width: 100%; margin-bottom: 50px} /* table 2 */
+.col-5 {width: 100%;} /* main */
+.col-6 {width: 100%; margin-bottom: 300px} /* table 3 */
+.col-7 {width: 40%; margin-right:100%} /* photoframe */
+.col-8 {width: 100%;} /* info */
+.col-9 {width: 100%;} /* main contents */
+.col-10 {width: 100%;} /* photo inner frame */
+.col-11 {width: 100%;} /* namecol */
+.col-12 {width: 10%;} /* intro */
+
+
+@media only screen and (min-width: 550px) {
+
+  h1 {
+    font-size: 3vw;
+  }
+  .menu {
+    font-size: 2vw;
+  }
+  .intro {
+    padding: 4.5vw 0 0 3vw;
+    font-size: 2vw;
+  }
+  .namecol {
+    padding-top: 10px;
+    display: flex;
+    align-items: stretch;
+  }
+  .info {
+    border-radius: 0 18px 18px 0;
+  }
+
+  .col-1 {width: 80%; margin-right: 100%;} /* table 1 */
+  .col-2 {width: 10%;}  /* menu items */
+  .col-3 {width: 100%;} /* menuframe */
+  .col-4 {width: 100%; margin-bottom: 50px} /* table 2 */
+  .col-5 {width: 100%;} /* main */
+  .col-6 {width: 80%; margin-bottom: 300px} /* table 3 */
+  .col-7 {width: 20%; margin-right:0} /* photoframe */
+  .col-8 {width: 40%;} /* info */
+  .col-9 {width: 100%;} /* main contents */
+  .col-10 {width: 100%;} /* photo inner frame */
+  .col-11 {width: 100%;} /* namecol */
+  .col-12 {width: 10%;} /* intro */
+}
+
+
+
+@media only screen and (min-width: 1005px) {
+  /* For desktop: */
+
+  h1 {
+    font-size: 2vw;
+  }
+
+  .main {
+  margin-top: 0px;
+  height: 100vh;
+  font-size: 15px;
+  padding: 10px 45px 10px 30px;
+  }
+  .menuframe {
+  padding-top: 10px;
+  padding-left: 10px;
+  height: 100vh;
+  }
+  .menu {
+  font-size: 18px;
+  margin-top: 0em;
+  margin-bottom: 0.7em;
+  }
+  .intro {
+  padding: 0px;
+  font-size: 1vw;
+  }
+  .info {
+  padding-left: 15px;
+  }
+
+  .col-1 {width: 80%; margin-right: 100%;}
+  .col-2 {width: 92%;}
+  .col-3 {width: 15%;}
+  .col-4 {width: 100%; margin-bottom: 50px; margin-right: 100%;}
+  .col-5 {width: 70%;} 
+  .col-6 {width: 70%; margin-bottom: 350px; margin-right: 100%;}
+  .col-7 {width: 18%;}
+  .col-8 {width: 45%;}
+  .col-9 {width: 100%;}
+  .col-10 {width:100%;}
+  .col-11 {width: 100%;}
+  .col-12 {width: 10%;}
+}
+
+@media print {
+    .main {
+        overflow: visible;
+    }
+    .menuframe {
+  	display: none;
+    }
+    html, body {
+        overflow: visible;
+	position: relative;
+    }
+}
+
+
+
+</style>
+
+<!-- Mathjax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML"></script>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true,
+            processEnvironments: true
+        },
+        // Center justify equations in code and markdown cells. Elsewhere
+        // we use CSS to left justify single line equations in code cells.
+        displayAlign: 'center',
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}},
+            linebreaks: { automatic: true }
+        }
+    });
+    </script>
+<!-- Mathjax -->
+
+</head>
+
+
+<body>
+
+<div class="col-3 menuframe">
+
+  <a href="https://junhyungchang.github.io/" style="color: black">
+    <div class="col-2 menu">
+      Home
+    </div>
+  </a>
+
+
+  <a href="#research" style="color: black">
+    <div class="col-2 menu">
+      Research
+    </div>
+  </a>
+
+  <a href="#teaching" style="color: black">
+    <div class="col-2 menu">
+      Teaching
+    </div>
+  </a>
+</div> <!-- menuframe -->
+
+  <div class="col-5 main">
+    <div class="col-11 namecol">
+      <div class="col-7 photoframe">
+          <img class="photo" src="images/portrait.jpg" alt="Junhyung Chang">
+      </div> <!-- photoframe -->
+      <div class="col-8 info">
+	  <h1>Junhyung Chang </h1>
+	  <ul class="ul-1">
+	    <li><b>Contact:</b>  jc10314 at nyu dot edu</li>
+          <li><b>Citizenship:</b>  South Korea</li>
+	  </ul>
+      </div> <!-- info -->
+    </div> <!--namecol-->
+
+  <div class="datetag">
+    Last updated: 10 Apr 2022
+  </div>
+
+  <div class="col-9">
+<br>
+<h3>Education:</h3>
+	<table class="col-1">
+	  <tr>
+	    <td>Sep 2020 - Present</td>
+	    <td>MS Mathematics</td>
+	    <td>NYU Courant</td>
+	  </tr>
+	  <tr>
+	    <td>Mar 2014 - Aug 2020</td>
+	    <td>BS,BA Mathematics, Economics</td>
+	    <td>Yonsei University</td>
+	  </tr>
+	  <tr>
+	    <td>Dec 2015 - Sep 2017</td>
+	    <td>Mandatory military service</td>
+	    <td>Rep. of Korea Army</td>
+	  </tr>
+	</table>
+
+
+   <hr id="research">
+   <h2> Research </h2>
+   <h3>Interests</h3>
+ I think about ways to accelerate numerical computations that arise in data science using randomized
+ and probabilistic algorithms. Naturally, I am interested in analyzing the theoretical, and empirical performance
+ of such algorithms in various settings. As of late, I am spending most of my time studying the following topics.
+<ul class="ul-4">
+  <li> Randomized numerical linear algebra </li>
+  <li> Hierarchical matrices and applications in kernel methods, e.g., Gaussian processes </li>             
+  <li> Optimization </li>
+  <li> Bayesian inference and inverse problems </li>
+</ul>
+
+  <h3>Projects</h3>
+<ul>
+      <li><a href="https://junhyungchang.github.io/projects/theses">
+            Theses </a></li>
+      <li><a href="https://junhyungchang.github.io/projects/misc">
+            Surveys, reports & miscellanea </a></li>
+   </ul>
+   <br>
+    
+
+
+    <hr id="teaching">
+    <br>
+    <h2>Teaching</h2>
+	<table class="col-6">
+	  <tr>
+	    <td><b>Role</b></td>
+	    <td><b>Course</b></td>
+	    <td><b>Number</b></td>
+	    <td><b>Term</b></td>
+	    <td><b>Institute</b></td>
+	  </tr>
+	  <tr>
+	    <td> TA</td>
+	    <td> Math For Economics II </td>
+	    <td> MATH-UA 212</td>
+	    <td> Sp 2022 </td>
+	    <td> NYU </td>
+	  </tr>
+	  <tr>
+	    <td> TA</td>
+	    <td> <a href="https://junhyungchang.github.io/teaching/la21f">
+            Linear Algebra </a> </td>
+	    <td> MATH-UA 140</td>
+	    <td> Fa 2021 </td>
+	    <td> NYU </td>
+	  </tr>
+	  <tr>
+	    <td> TA</td>
+	    <td> Math For Economics </td>
+	    <td> MATH-UA 211</td>
+	    <td> Fa 2020 </td>
+	    <td> NYU </td>
+	  </tr>
+	  <tr>
+	    <td> Tutor </td>
+	    <td> Math For Economics I</td>
+	    <td> ECO 1101</td>
+	    <td> Sp 2020 </td>
+	    <td> Yonsei </td>
+	  </tr>
+	</table>
+
+    </div>
+  </div>
+
+
+</body>
+
+
