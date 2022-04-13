@@ -12,13 +12,8 @@
 </thead>
 <tbody>
   <tr>
-    <td><b>Fast Gaussian processes via hierarchical matrix factorizations</b></td>
-    <td> MS thesis </td>
-    <td> In progress</td>
-  </tr>
-  <tr>
-    <td colspan="3">
-<details>
+    <td><b>Fast Gaussian processes via hierarchical matrix factorizations</b>
+    <details>
 <summary> Description </summary>
 
 My master's thesis is about accelerating Gaussian process regression, classification, and hyperparameter MLE via randomized methods. Some questions that I am currently trying to answer in my thesis include
@@ -32,7 +27,9 @@ My master's thesis is about accelerating Gaussian process regression, classifica
 * How can an ill-conditioned Hessian of a log-likelihood be modified for large-scale second-order MLE? 
 </details>
 
-  </td>
+</td>
+    <td> MS thesis </td>
+    <td> In progress</td>
   </tr>
 </tbody>
 </table>
