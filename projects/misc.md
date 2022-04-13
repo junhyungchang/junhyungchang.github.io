@@ -23,8 +23,8 @@ Final project for Computational Statistics, fall 2021
        </td>
 	   <td> Report </td>
 	   <td>
-	  [<a href="https://junhyungchang.github.io/projects/CompStats/FastGPLR.pdf">PDF</a>]
-	  [<a href="https://github.com/junhyungchang/compstats_project">Code</a>]
+	  [<a href="https://junhyungchang.github.io/projects/CompStats/FastGPLR.pdf">PDF</a>]<br>
+	  [<a href="https://github.com/junhyungchang/compstats_project">Code</a>]<br>
       [<a href="https://junhyungchang.github.io/projects/CompStats/CompStats_PP.pdf">Slides</a>]
 	  </td>
 	</tr>
@@ -39,7 +39,7 @@ Final project for Numerical Optimization, fall 2021
        </td>
 	   <td> Report </td>
 	   <td>
-	    [<a href="https://junhyungchang.github.io/projects/NumOpt/RandLS.pdf">PDF</a>]
+	    [<a href="https://junhyungchang.github.io/projects/NumOpt/RandLS.pdf">PDF</a>]<br>
 	  [<a href="https://github.com/junhyungchang/junhyungchang.github.io/tree/main/projects/NumOpt/Codes">Code</a>]
 	   </td>
 	</tr>
@@ -54,7 +54,7 @@ Final project for Numerical Methods 2, spring 2021
        </td>
 	   <td> Report </td>
 	   <td>
-	   [<a href="https://junhyungchang.github.io/projects/NumMethods2/OutgoingBdy.pdf">PDF</a>]
+	   [<a href="https://junhyungchang.github.io/projects/NumMethods2/OutgoingBdy.pdf">PDF</a>]<br>
 	  [<a href="https://github.com/junhyungchang/junhyungchang.github.io/tree/main/projects/NumMethods2/Codes">Code</a>]
 	  </td>
 	</tr>
