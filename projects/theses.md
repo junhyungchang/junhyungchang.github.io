@@ -26,6 +26,7 @@ My master's thesis is about accelerating Gaussian process regression, classifica
 <li>Which randomized low-rank approximation methods are effective for compressing blocks of Hierarchical matrices? </li>
 <li>What types of randomized tools can be used for Gaussian processes associated with general kernels? </li>
 <li>How can an ill-conditioned Hessian of a log-likelihood be modified for large-scale second-order MLE? </li>
+</ul>
 </details>
 
 </td>
