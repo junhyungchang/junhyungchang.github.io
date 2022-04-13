@@ -38,8 +38,10 @@ Final project for Numerical Optimization, fall 2021
        </details>
        </td>
 	   <td> Report </td>
-	   <td>[[PDF](https://junhyungchang.github.io/projects/NumOpt/RandLS.pdf)]
-           [[Code](https://github.com/junhyungchang/junhyungchang.github.io/tree/main/projects/NumOpt/Codes)]</td>
+	   <td>
+	    [<a href="https://junhyungchang.github.io/projects/NumOpt/RandLS.pdf">PDF</a>]
+	  [<a href="https://github.com/junhyungchang/junhyungchang.github.io/tree/main/projects/NumOpt/Codes">Code</a>]
+	   </td>
 	</tr>
         <tr>
 	   <td> </td>
@@ -51,8 +53,10 @@ Final project for Numerical Methods 2, spring 2021
        </details>
        </td>
 	   <td> Report </td>
-	   <td>[[PDF](https://junhyungchang.github.io/projects/NumMethods2/OutgoingBdy.pdf)]
-           [[Code](https://github.com/junhyungchang/junhyungchang.github.io/tree/main/projects/NumMethods2/Codes)]</td>
+	   <td>
+	   [<a href="https://junhyungchang.github.io/projects/NumMethods2/OutgoingBdy.pdf">PDF</a>]
+	  [<a href="https://github.com/junhyungchang/junhyungchang.github.io/tree/main/projects/NumMethods2/Codes">Code</a>]
+	  </td>
 	</tr>
 	<tr>
 	   <td> </td>
@@ -64,7 +68,9 @@ A list of textbook and web references for enhanced retention
        </details>
        </td>
 	   <td> Misc. </td>
-	   <td>[[PDF](https://junhyungchang.github.io/projects/NumDigest/Numerical_Methods_Digest.pdf)]</td>
+	   <td>
+	   [<a href="https://junhyungchang.github.io/projects/NumDigest/Numerical_Methods_Digest.pdf">PDF</a>]
+	   </td>
 	</tr>
     </tbody>
 </table>
