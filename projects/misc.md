@@ -22,9 +22,10 @@ Final project for Computational Statistics, fall 2021
        </details>
        </td>
 	   <td> Report </td>
-	   <td>[[PDF](https://junhyungchang.github.io/projects/CompStats/FastGPLR.pdf)]
+	   <td>
+	   <div markdown="1">[[PDF](https://junhyungchang.github.io/projects/CompStats/FastGPLR.pdf)]
            [[Code](https://github.com/junhyungchang/compstats_project)]
-	   [[Slides](https://junhyungchang.github.io/projects/CompStats/CompStats_PP.pdf)]</td>
+	   [[Slides](https://junhyungchang.github.io/projects/CompStats/CompStats_PP.pdf)]</div></td>
 	</tr>
 	<tr>
 	   <td> </td>
