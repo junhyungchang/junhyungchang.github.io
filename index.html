@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<!-- Copyright 2023 Junhyung Chang -->
+<head>
+<meta charset="UTF-8">
+<title>Junhyung Chang - 장준형</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/x-icon" href="/images/icon.ico">
+<meta name="google-site-verification" content="MXcD6uFvSTg5f80noH4HP72Vm7DsSSRoDu-JFTg9hu0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=3">
+
+<!-- Mathjax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML"></script>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true,
+            processEnvironments: true
+        },
+        // Center justify equations in code and markdown cells. Elsewhere
+        // we use CSS to left justify single line equations in code cells.
+        displayAlign: 'center',
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}},
+            linebreaks: { automatic: true }
+        }
+    });
+    </script>
+<!-- Mathjax -->
+
+</head>
+
+
+<body>
+
+  <div class="col-5 main">
+
+    <div class="col-12 banner">
+      <img class="bannerimg" src="images/monona2.JPG" alt="Junhyung Chang">
+    </div>
+
+    <div class="col-9 maincts">
+        <div class="col-2 namecol">
+          <h1>Junhyung Chang &#183; 장준형</h1>
+        </div>
+         
+        <div class="col-3 dropdown">
+          <button class="btn" onclick="myFunction()"> 
+            &equiv;
+          </button>
+          <div class="drop-menu dropright" id="dropright">
+            <a href="https://junhyungchang.github.io/" style="color: black">
+                Home
+            </a>
+            <a href="#bio" style="color: black">
+                Bio
+            </a>
+            <a href="#research" style="color: black">
+                Research
+            </a>
+            <a href="#teaching" style="color: black">
+                Teaching
+            </a>
+          </div>
+        </div> 
+
+
+        <div class="col-10 photoframe">
+          <img class="photo" src="images/portrait.jpeg" alt="Junhyung Chang">
+        </div> <!-- photoframe -->
+
+
+        <div class="col-11 infocol">
+            <p style="margin-top: 0px;"> PhD Student <br> <a href="https://stat.wisc.edu/">Department of Statistics
+               <br> University of Wisconsin-Madison</a></p>
+
+            <table class="introtable">
+              <tr>
+                <td class="introrow">E-mail:</td>
+                <td class="introrow">jchang243 at wisc dot edu</td>
+              </tr>
+              <tr>
+                <td class="introrow">Office:</td>
+                <td class="introrow">6175A Medical Sciences Center</td>
+              </tr>
+              <tr>
+                <td class="introrow">Address:</td>
+                <td class="introrow">1300 University Ave, Madison, WI 53706</td>
+              </tr>
+            </table>
+        </div> <!--namecol-->
+
+
+    <div class="col-9">
+      <div class="col-7">
+        <p>I study the statistical properties of spectral methods, and their applications in dimensionality reduction, latent structure discovery, and uncertainty quantification. Furthermore, I am interested in the acceleration of spectral methods via randomized numerical linear algebra. My investigations often involve networks, random graphs/matrices, and point clouds, all with some low-dimensional latent structure. 
+            I am receiving academic guidance from Professor <a href="https://jcape1.github.io/">Joshua Cape</a>.</p>
+      </div>
+      <div class="col-7">
+        <hr id="bio">
+          <h2>Bio</h2>
+          <table class="col-1">
+            <tr class="rheader rsmall">
+              <td colspan="6" class="tablerows"><strong>Positions</strong></td>
+            <tr class="rsmall">
+              <td class="datestart tablerows">Sep 2022</td>
+              <td class="datedash tablerows">-</td>
+              <td class="datestart tablerows"></td>
+              <td class="dspace tablerows"></td>
+              <td class="tablerows">Teaching/Research Assistant</td>
+              <td class="tablerows">UW-Madison</td>
+            </tr>
+            <tr class="rsmall">
+              <td class="datestart tablerows">Sep 2020</td>
+              <td class="datedash tablerows">-</td>
+              <td class="datestart tablerows">May 2022</td>
+              <td class="dspace tablerows"></td>
+              <td class="tablerows">Teaching Assistant</td>
+              <td class="tablerows">NYU Courant</td>
+            </tr>
+            <tr class="rsmall">
+              <td class="datestart tablerows">Dec 2015</td>
+              <td class="datedash tablerows">-</td>
+              <td class="datestart tablerows">Sep 2017</td>
+              <td class="dspace tablerows"></td>
+              <td class="tablerows">Interpreter/Admin (compulsory military service)</td>
+              <td class="tablerows">Rep. of Korea Army</td>
+            </tr>
+            <tr class="rheader rsmall">
+              <td colspan="6" class="tablerows"><strong>Education</strong></td>
+            </tr>
+            <tr class="rsmall">
+              <td class="datestart tablerows">Sep 2022</td>
+              <td class="datedash tablerows">-</td>
+              <td class="datestart tablerows"></td>
+              <td class="dspace tablerows"></td>
+              <td class="tablerows">Statistics PhD student</td>
+              <td class="tablerows">UW-Madison</td>
+            </tr>
+            <tr class="rsmall" class="tablerows">
+              <td class="datestart tablerows">Sep 2020</td>
+              <td class="datedash tablerows">-</td>
+              <td class="datestart tablerows">May 2022</td>
+              <td class="dspace tablerows"></td>
+              <td class="tablerows">MS Mathematics</td>
+              <td class="tablerows">NYU Courant</td>
+            </tr>
+            <tr class="rsmall" class="tablerows">
+              <td class="datestart tablerows">Mar 2014</td>
+              <td class="datedash tablerows">-</td>
+              <td class="datestart tablerows">Aug 2020</td>
+              <td class="dspace tablerows"></td>
+              <td class="tablerows">BA,BS Economics, Mathematics</td>
+              <td class="tablerows">Yonsei University</td>
+            </tr>
+          </table>
+      </div>
+      
+      <div class="col-7">
+        <hr id="research">
+        <h2>Research</h2>
+          <table class="col-4">
+            <tr class="rheader rsmall">
+              <td class="tablerows"><strong>Miscellanea/Technical reports</strong></td>
+            </tr>
+            <tr class="rsmall">
+              <td class="tablerows"> Computational complexity of Spectral clustering in SBMs, Technical Report, 10/11/2023.
+              <br><code>[<a href="https://junhyungchang.github.io/projects/misc/tr231011_complexity of spectral clustering.pdf">PDF</a>]</code></td>
+            </tr>
+            <tr class="rsmall">
+              <td class="tablerows"> Finite-dimensional operator norm basics, Miscellaneous, 01/07/2023.
+              <br><code>[<a href="https://junhyungchang.github.io/projects/misc/opnorm">HTML</a>]</code></td>
+            </tr>
+            <tr class="rsmall">
+              <td class="tablerows"> Fast Gaussian processes via hierarchical matrix factorizations, MS thesis, May 2022.
+              <br><code>[<a href="https://junhyungchang.github.io/projects/masters_thesis/jchang_masters_thesis.pdf">PDF</a>|<a href="https://github.com/junhyungchang/mastersthesis">Code</a>]</code></td>
+            </tr>
+            </table>
+        </div>
+
+          <div class="col-7">
+            <hr id="teaching">
+            <h2>Teaching</h2>
+            <table class="col-6">
+              <tr class="rheader rsmall">
+                <td class="tablerows"><b>Term</b></td>
+                <td class="tablerows"><b>Role</b></td>
+                <td class="tablerows"><b>Course</b></td>
+                <td class="tablerows"><b>Number</b></td>
+                <td class="tablerows"><b>Institute</b></td>
+              </tr>
+              <tr class="rsmall">
+                <td class="tablerows"> 23F </td>
+                <td class="tablerows"> TA</td>
+                <td class="tablerows"> Data Science Modeling II</td>
+                <td class="tablerows"> STAT 340</td>
+                <td class="tablerows"> UW-Madison </td>
+              </tr>
+              <tr class="rsmall">
+                <td class="tablerows" rowspan="2"> 23S<br>22F</td>
+                <td class="tablerows" style="border-bottom: none;"> TA</td>
+                <td class="tablerows" style="border-bottom: none;"> Introductory Applied Statistics for Engineers</td>
+                <td class="tablerows" style="border-bottom: none;"> STAT 324</td>
+                <td class="tablerows" style="border-bottom: none;"> UW-Madison </td>
+              </tr>
+              <tr class="rsmall">
+                <td colspan="4" class="tablerows" style="border-top: none; text-align: right; padding-top: 0;"> &nbsp; <code>-<em>Honorable Mention, '22-'23 Outstanding TA Performance Award</em></code></td>
+              </tr>
+              <tr class="rsmall">
+                <td class="tablerows"> 22S </td>
+                <td class="tablerows"> TA</td>
+                <td class="tablerows"> Math For Economics II </td>
+                <td class="tablerows"> MATH-UA 212</td>
+                <td class="tablerows"> NYU </td>
+              </tr>
+              <tr class="rsmall">
+                <td class="tablerows"> 21F </td>
+                <td class="tablerows"> TA</td>
+                <td class="tablerows"> <a href="https://junhyungchang.github.io/teaching/la21f">
+                      Linear Algebra </a> </td>
+                <td class="tablerows"> MATH-UA 140</td>
+                <td class="tablerows"> NYU </td>
+              </tr>
+              <tr class="rsmall">
+                <td class="tablerows"> 21S<br>20F</td>
+                <td class="tablerows"> TA</td>
+                <td class="tablerows"> Math For Economics </td>
+                <td class="tablerows"> MATH-UA 211</td>
+                <td class="tablerows"> NYU </td>
+              </tr>
+              <tr class="rsmall"> 
+                <td class="tablerows"> 20S </td>
+                <td class="tablerows"> Tutor </td>
+                <td class="tablerows"> Math For Economics I</td>
+                <td class="tablerows"> ECO 1101</td>
+                <td class="tablerows"> Yonsei </td>
+              </tr>
+            </table>
+          <div class="col-7">
+          <p class="cr"> &copy; 2023 Junhyung Chang. Last updated: 31 Oct 2023. <!--  Webpage format by <a href="https://junhyungchang.github.io/">Junhyung Chang</a>. - Something like this will be appreciated. -JHC --> 
+          </p> 
+          </div>
+          </div>
+        </div>
+      </div>  
+  </div>
+
+  <script src="script.js"> </script>
+</body>
+
+
