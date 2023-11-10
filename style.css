@@ -30,15 +30,15 @@ a:link {
 
 a:visited {
   color: rgb(0, 0, 0);
-  text-decoration: underline;
-  text-decoration-thickness: 0.5px;
 }
 
 a:hover {
   color: rgb(56, 112, 233);
   cursor: pointer;
-  text-decoration: underline;
-  text-decoration-thickness: 0.5px;
+}
+
+.abtn {
+  text-decoration: none !important;
 }
 
 h1 {
