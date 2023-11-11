@@ -11,7 +11,7 @@
 
 
 
-<title>Operator norm basics</title>
+<title>matnorm.knit</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -252,7 +252,7 @@ if (window.hljs) {
 
 
 
-<style type="text/css">* {box-sizing: border-box;}html, body {overflow: hidden;min-height: 100%;min-height: -webkit-fill-available;min-height: -moz-available;width: 100%;position: fixed;}body {margin: 0px;background-color: rgba(193, 154, 107, 0.5);font-family: Helvatica, sans-serif;}a:link, a:visited {color: black;text-decoration: none;}a:hover {text-decoration: underline;text-decoration-style: none;}.menuframe {overflow: hidden;position: relative;}.menu {background-color: #fff;border: 0px solid;border-radius: 8px;box-shadow: 5px 5px 5px rgba(0,0,0,0.5);padding: 3px 0 3px 0;margin-top: 0.5em;margin-bottom: 0.8em;text-align: center;letter-spacing: -0.05em;font-size: 2.7vw;margin-right: 1.5vw;}.menu:hover {background-color:LightGray;}.namecol {width: 100%;}.photoframe{background-color: rgba(0,0,185,0);}.photoframe img{display: block;}.photo {border-radius: 50%;width: 100%;}.nametag {padding: 0 0 0 0;text-align: center;}.intro {padding: 0 0 0 0;font-size: 3vw;}.info {margin-bottom: 0px;padding: 8px 8px 0px 8px;min-height: 100%;}.main {background-color: #fff;border: 0px solid;border-radius: 0px;padding: 10px 10px 10px 10px;margin: 0px;font-size: 15px;line-height: 1.5;height: 100vh;overflow: auto;position: relative;}.datetag {position: absolute;right: 10px;}.contents {background-color: #F5F5F5;border-style:solid;border-width:1px;padding:5px;}table {border-collapse: collapse;}td, th {border-bottom: 1px solid #dddddd;text-align: left;padding: 3px;}::-webkit-scrollbar {width: 8px;}::-webkit-scrollbar-track {background: #f1f1f1; }::-webkit-scrollbar-thumb {background: #acacac; border-radius: 10px;}::-webkit-scrollbar-thumb:hover {background: #888; }hr {border-width: 1px;visibility: hidden;}ul {margin: 0 0 0 20px;padding-left: 0px;}li{margin: 0px 0;}.ul-1 {padding: 5px 0 5px 0;}.ul-2 {padding: 20px 0 0 0;}.ul-3 {padding: 0 0 20px 0;}.ul-4 {padding: 20px 0 20px 0;}[class*="col-"] {float: left;}.col-1 {width: 100%; margin-bottom: 30px} .col-2 {width: 11.5%;} .col-3 {width: 100%;} .col-4 {width: 100%; margin-bottom: 50px} .col-5 {width: 100%;} .col-6 {width: 100%; margin-bottom: 300px} .col-7 {width: 40%; margin-right:100%} .col-8 {width: 100%;} .col-9 {width: 100%;} .col-10 {width: 100%;} .col-11 {width: 100%;} .col-12 {width: 10%;} @media only screen and (min-width: 550px) {h1 {font-size: 3vw;}.menu {font-size: 2vw;}.intro {padding: 4.5vw 0 0 3vw;font-size: 2vw;}.namecol {padding-top: 10px;display: flex;align-items: stretch;}.info {border-radius: 0 18px 18px 0;}.col-1 {width: 80%; margin-right: 100%;} .col-2 {width: 10%;} .col-3 {width: 100%;} .col-4 {width: 100%; margin-bottom: 50px} .col-5 {width: 100%;} .col-6 {width: 80%; margin-bottom: 300px} .col-7 {width: 20%; margin-right:0} .col-8 {width: 40%;} .col-9 {width: 100%;} .col-10 {width: 100%;} .col-11 {width: 100%;} .col-12 {width: 10%;} }@media only screen and (min-width: 1005px) {.main {margin-top: 0px;height: 100vh;font-size: 15px;padding: 10px 45px 10px 30px;}.menuframe {padding-top: 10px;padding-left: 10px;height: 100vh;}.menu {font-size: 18px;margin-top: 0em;margin-bottom: 0.7em;}.intro {padding: 0px;font-size: 1vw;}.info {padding-left: 15px;}.col-1 {width: 80%; margin-right: 100%;}.col-2 {width: 92%;}.col-3 {width: 15%;}.col-4 {width: 100%; margin-bottom: 50px; margin-right: 100%;}.col-5 {width: 70%;} .col-6 {width: 70%; margin-bottom: 350px; margin-right: 100%;}.col-7 {width: 18%;}.col-8 {width: 45%;}.col-9 {width: 100%;}.col-10 {width:100%;}.col-11 {width: 100%;}.col-12 {width: 10%;}}@media print {.main {overflow: visible;}.menuframe {display: none;}html, body {overflow: visible;position: relative;}}</style>
+<style type="text/css">* {box-sizing: border-box;}html, body {overflow: visible;min-height: 100%;min-height: -webkit-fill-available;min-height: -moz-available;width: 100%;position: relative;display: flex;justify-content: left;}body {margin: 0px;background-color: rgb(255, 255, 255);color: rgb(0, 0, 0);font-family: 'Helvatica', 'Arial', 'Gulim', sans-serif;}a:link {color: rgb(0, 0, 0);text-decoration: underline;text-decoration-thickness: 0.5px;text-underline-offset: 2px;}a:visited {color: rgb(0, 0, 0);}a:hover {color: rgb(56, 112, 233);cursor: pointer;}.abtn {text-decoration: none !important;}.banner {position: relative;}.bannerimg {width: 100%;border-radius: 0px;display: block;}.bannertext {width: 100%;background-color: rgba(90, 51, 0, 0.356);font-size: 10px;color: #000000;text-align: right;}.cr {font-size: 10px;margin: 20px 0 5px 0;}.namecol {padding: 5px 0 0 0;overflow-x: scroll;overflow-y: hidden;white-space: nowrap;}.infocol {padding: 3px 0 0 0;}.photoframe{background-color: rgba(0,0,185,0);padding: 5px 5px 5px 0;margin: 5px 5px 5px 0;}.photoframe img{display: block;}.photo {border-radius: 0%;width: 100%;padding: 0 0 0 0;}.btn {border: solid;border-width: 0px;border-radius: 3.5px;color: rgb(255, 255, 255); background-color: rgba(54, 93, 177, 0.7);font-size: 25px; padding: 0 7px 0 7px;}.btn:hover {cursor: pointer;background-color: rgba(54, 93, 177, 1);}.dropdown {top: 3px;right: 0px;position: -webkit-sticky;position: sticky;display: inline-block;}.drop-menu {display: none;position: absolute;background-color: #f1f1f1;min-width: 160px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);z-index: 1;}.drop-menu a {color: black;padding: 8px 12px;text-decoration: none;display: block;}.drop-menu a:hover {background-color: rgba(106, 152, 252, 0.788);}.show {display: block;}.dropright {right: 100%;top: 0%;margin: 0 0 0 0;}.main {background-color:rgba(255,255,255,0);border: 0px solid;border-radius: 0px;padding: 0 0 0 0;margin: 0px;font-size: 16px;line-height: 1.5;min-height: 100%;overflow: visible;position: absolute;}.contents {background-color: #F5F5F5;border-style:solid;border-width:1px;padding:5px;}.maincts {padding: 7px 0 0 7px;}.linkbtn {cursor: default;padding: 2px 3px 2px 3px;margin: 0 3px 0 0;border-radius: 3.5px;background-color: rgba(54, 93, 177, 0.7);color: rgb(255, 255, 255);} .linkbtn:hover {cursor: pointer;color: rgb(255, 255, 255);background-color: rgba(54, 93, 177, 1);}table {border-collapse: collapse;}.rsmall {font-size: 12px;} .tablerows {border-bottom: 1px solid #d5d5d5;text-align: left;padding: 3px;}.rheader {background-color: rgba(0, 0, 0, 0.1);}.datestart {width: 30px;}.datedash {width: 11px;}.dspace {width: 10px;}.introtable {margin: 0 0 14px 0;}.introrow {vertical-align: text-top;text-align: left;}hr {border: 1.5px solid;color: rgb(54, 93, 177); visibility: visible;width: 100px;margin: 50px auto 50px auto;}ul {margin: 0 0 0 15px;padding-left: 0px;}li{margin: 0px 0;}.ul-1 {padding: 0 0 0 0;}.ul-2 {padding: 0 0 0 0;}.ul-3 {padding: 0 0 0 0;}.ul-4 {padding: 0 0 0 0;}details summary {cursor: pointer;background-color: rgba(0, 0, 0, 0.1);display: block;}details summary:hover {background-color: rgba(0, 0, 0, 0.15);}[class*="col-"] {float: left;}.col-1 {width: 100%;} .col-2 {width: 86%;} .col-3 {width: 10%;} .col-4 {width: 100%;} .col-5 {width: 100%;} .col-6 {width: 100%; margin-bottom: 20px} .col-7 {width: 100%; padding-right: 5px;} .col-8 {width: 100%;} .col-9 {width: 100%;} .col-10 {width: 175px;} .col-11 {width: 100%;} .col-12 {width: 100%;} @media only screen and (min-width: 345px) { .namecol {overflow: visible;}.cr {font-size: 12px;}.col-1 {width: 100%;} .col-2 {width: 89.5%;} .col-3 {width: 10%;} .col-4 {width: 100%;} .col-5 {width: 100%;} .col-6 {width: 100%; margin-bottom: 20px} .col-7 {width: 100%; padding-right: 5px;} .col-8 {width: 100%;} .col-9 {width: 100%;} .col-10 {width: 175px;} .col-11 {width: 100%;} .col-12 {width: 100%;} }@media only screen and (min-width: 550px) {.main {font-size: 16px;padding: 0 0 0 0;}.cr {font-size: 14px;}.infocol {padding: 10px 0 0 0;}.datestart {width: 77px;}.datedash {width: 14 px;}.dspace {width: 40px;}.rsmall {font-size: inherit;}.col-1 {width: 100%;} .col-2 {width: 94%;} .col-3 {width: 6%;} .col-4 {width: 100%;} .col-5 {width: 100%;} .col-6 {width: 100%; margin-bottom: 20px} .col-7 {width: 100%;} .col-8 {width: 100%;} .col-9 {width: 100%;} .col-10 {width: 175px;} .col-11 {width: 75%;} .col-12 {width: 100%;} }@media only screenand (orientation: landscape) {.main {font-size: 16px;padding: 0 0 0 0;}.cr {font-size: 14px;}.infocol {padding: 10px 0 0 0;}.datestart {width: 77px;}.dspace {width: 25px;}.datedash {width: 14 px;}.col-1 {width: 100%;} .col-2 {width: 94.5%;} .col-3 {width: 5.5%;} .col-4 {width: 100%;} .col-5 {width: 100%;} .col-6 {width: 100%; margin-bottom: 20px;} .col-7 {width: 100%;} .col-8 {width: 92%;} .col-9 {width: 100%;} .col-10 {width: 175px;} .col-11 {width: 72%;} .col-12 {width: 100%;} }@media only screenand (min-width: 920px)and (orientation: landscape) {.main {font-size: 14px;}.cr {font-size: 12px;}.datestart {width: 68px;}.datedash {width: 13.5px;}.dspace {width: 60px;}.col-1 {width: 100%;} .col-2 {width: 94.5%;} .col-3 {width: 5.5%;} .col-4 {width: 100%;} .col-5 {width: 500px;} .col-6 {width: 100%; margin-bottom: 20px} .col-7 {width: 100%;} .col-8 {width: 92%;} .col-9 {width: 100%;} .col-10 {width: 175px;} .col-11 {width: 450px;} .col-12 {width: 100%;} }@media only screenand (min-width: 1400px)and (orientation: landscape) {.main {font-size: 16px;}.cr {font-size: 14px;}.datestart {width: 77px;}.datedash {width: 14px;}.dspace {width: 100px;}.col-1 {width: 100%;} .col-2 {width: 94.5%;} .col-3 {width: 5.5%;} .col-4 {width: 100%;} .col-5 {width: 1000px} .col-6 {width: 100%; margin-bottom: 20px;} .col-7 {width: 100%;} .col-8 {width: 92%;} .col-9 {width: 100%;} .col-10 {width: 180px;} .col-11 {width: 400px;} .col-12 {width: 100%;} }@media print {.main {overflow: visible;}html, body {overflow: visible;position: relative;}}</style>
 
 
 
@@ -359,15 +359,13 @@ display: none;
 </div>
 
 
-<div class="main" style="width:100%">
-
-
 <h1 id="title">
 Operator norm basics
 </h1>
-<div id="jan-2-2023" class="section level4">
-<h4>Jan 2, 2023</h4>
-<p><a href="https://junhyungchang.github.io/#research"> Back to list
+<p>
+First created: 2023-01-02. Last modified: 2023-11-10.
+</p>
+<p><a href="https://junhyungchang.github.io/projects/misc"> Back to list
 </a></p>
 <div class="contents" style="width: 51%;">
   Contents
@@ -684,15 +682,13 @@ have</p>
 <p><br> <strong>Corollary.</strong> When <span class="math inline">\(\nu\)</span>, <span class="math inline">\(\mu\)</span> and <span class="math inline">\(\eta\)</span> are the same vector norms, it
 follows that <span class="math inline">\(\|\cdot\|_\nu\)</span> is
 submultiplicative.</p>
-<p><br> <strong>Corollary.</strong> Let <span class="math inline">\(\nu,
-\mu,\eta\)</span> and <span class="math inline">\(\xi\)</span> be norms
-on <span class="math inline">\(\mathbb C^{m}\)</span>, <span class="math inline">\(\mathbb C^{n}\)</span>, <span class="math inline">\(\mathbb C^{k}\)</span> and <span class="math inline">\(\mathbb C^{\ell}\)</span>. Also, let <span class="math inline">\(\|\cdot\|_{\mu,\nu}\)</span>, <span class="math inline">\(\|\cdot\|_{\nu,\eta}\)</span>, <span class="math inline">\(\|\cdot\|_{\eta,\xi}\)</span> and <span class="math inline">\(\|\cdot\|_{\mu,\xi}\)</span> be the subordinate
-operator norms. Applying the same technique in the proof of the theorem
-above, we have</p>
+<p><br> <strong>Corollary.</strong> Let <span class="math inline">\(A\in\mathbb C^{m\times n}\)</span>, <span class="math inline">\(B\in\mathbb C^{n\times k}\)</span>, and <span class="math inline">\(C\in\mathbb C^{k\times \ell}\)</span>. Also, let
+<span class="math inline">\(\mu\)</span> be a norm on <span class="math inline">\(\mathbb C^{n}\)</span>, <span class="math inline">\(\nu\)</span> a norm on <span class="math inline">\(\mathbb C^{m}\)</span>, <span class="math inline">\(\xi\)</span> a norm on <span class="math inline">\(\mathbb C^{\ell}\)</span>, and <span class="math inline">\(\eta\)</span> a norm on <span class="math inline">\(\mathbb C^{k}\)</span>. Also, let <span class="math inline">\(\|\cdot\|_{\mu,\nu}\)</span>, <span class="math inline">\(\|\cdot\|_{\nu,\eta}\)</span>, <span class="math inline">\(\|\cdot\|_{\eta,\xi}\)</span> and <span class="math inline">\(\|\cdot\|_{\mu,\xi}\)</span> be the subordinate
+operator norms. Applying the theorem above twice, we have</p>
 <p><span class="math display">\[\begin{equation}
 \tag{7}
 \label{eq:opineq3}
-\|ABC\|_{\xi,\nu}\leq \|A\|_{\nu,\mu} \|B\|_{\eta,\mu} \|C\|_{\xi,\eta}.
+\|ABC\|_{\xi,\nu}\leq \|A\|_{\mu,\nu} \|B\|_{\eta,\mu} \|C\|_{\xi,\eta}.
 \end{equation}\]</span></p>
 <p><br> <strong>Remark.</strong> The theorem and corollary above are
 particularly useful when we are interested in bounding the norm of a
@@ -708,7 +704,6 @@ e.g.,</p>
 <p>The following are examples of operator norms with explicit
 properties.</p>
 <p><br></p>
-</div>
 <div id="domain-equipped-with-cdot_1." class="section level4">
 <h4>2.2.1 Domain equipped with <span class="math inline">\(\|\cdot\|_1\)</span>.</h4>
 <strong>Example 2.1.</strong> The operator 1-norm of <span class="math inline">\(A\in\mathbb C^{m\times n}\)</span> is the maximum
@@ -877,7 +872,6 @@ theory</em>, Academic Press, 1990.
 <p><a href="#title"> Back to top </a></p>
 <p><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
 <br> <br> <br> <br></p>
-</div>
 </div>
 
 
