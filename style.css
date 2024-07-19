@@ -16,7 +16,7 @@ html, body {
 
 body {
   margin: 0px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(129, 183, 255, 0.3);
   color: rgb(0, 0, 0);
   font-family: 'Helvatica', 'Arial', 'Gulim',  sans-serif;
 }
@@ -51,9 +51,17 @@ h2 {
   /*color: rgb(255, 200, 0); */
   font-size: 22px;
   line-height: 1px;
+  /* margin: 30px 0 0 0; */
   text-align: left;
+  /* vertical-align: text-top; */
 }
 
+h3 {
+  font-size: inherit;
+  margin: 30px 0 0 0;
+  /* line-height: 5px; */
+  text-align: left;
+}
 
 .banner {
   position: relative;
@@ -73,6 +81,12 @@ h2 {
   text-align: right;
 }
 
+.bannerlabel {
+  position: absolute;
+  bottom: 5px;
+  right: 8px;
+  font-size: 50%;
+}
 
 .cr {
   font-size: 10px;
@@ -82,7 +96,7 @@ h2 {
 
 .namecol {
   padding: 5px 0 0 0;
-  overflow-x: scroll;
+  overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
 }
@@ -162,7 +176,7 @@ h2 {
 
 
 .main {
-  background-color:rgba(255,255,255,0);
+  background-color:rgba(255,255,255,1);
   border: 0px solid;
   border-radius: 0px;
   padding: 0 0 0 0;
@@ -175,7 +189,7 @@ h2 {
 }
 
 .maincts {
-  padding: 7px 0 0 7px;
+  padding: 7px 0 0 10px;
 }
 
 
@@ -205,29 +219,48 @@ table {
   font-size: 12px;
 } /* small font rows */
   
-.tablerows {
-  border-bottom: 1px solid #d5d5d5;
+.teachrows {
   text-align: left;
-  padding: 3px;
+  border-bottom: 1px solid #00000020;
+  padding: 1.5px 1.5px 1.5px 1.5px;
 }
 
-.rheader {
-  background-color: rgba(0, 0, 0, 0.1);
+.biorows {
+  text-align: left;
+  /* vertical-align: top; */
+  /* border-bottom: 1px solid #00000020; */
+  padding: 1.5px 1.5px 1.5px 0px;
 }
 
+.tdhead {
+  text-align: left;
+  border-bottom: 1.2px solid #00000055;
+  /* padding: 1.5px 0 1.5px 1px; */
+}
+
+.biohead {
+  text-align: left;
+  /* border-bottom: 1.2px solid #00000055; */
+  /* padding: 1.5px 0 1.5px 1px; */
+}
 
 .datestart {
   width: 30px;
+  /* border: 1px solid black; */
 }
 
 .datedash {
   width: 11px;
+  text-align: center;
 }
 
 .dspace {
   width: 10px;
 }
 
+.dateend {
+  width: 30px;
+}
 .introtable {
   margin: 0 0 14px 0;
 }
@@ -237,63 +270,67 @@ table {
   text-align: left;
 }
 
+.itemp {
+  margin: 3px 0 3px 0; 
+}
+
+
+
 
 /* horizontal rule attributes*/
 hr {
-  border: 1.5px solid;
-  color: rgb(54, 93, 177); 
-  /*color: rgb(255, 200, 0); */
-  visibility: visible;
+  border: 1.8px solid;
+  color: rgb(54, 93, 177);
+  /* color: rgb(255, 200, 0); */
+  visibility: visible; 
   width: 100px;
-  margin: 50px auto 50px auto;
+  /* visibility: hidden; */
+  margin: 30px auto 40px auto;
 }
 
 /* list attributes*/
 ul {
- margin: 0 0 0 15px;
- padding-left: 0px;
+ padding-left: 3px;
 }
 
-li{
-  margin: 0px 0;
-}
-
-.ul-1 {
-  padding: 0 0 0 0;
+.mainli {
+  margin: 15px 0 0 0;
+  list-style-type: disc;
 }
 
 
-.ul-2 {
-  padding: 0 0 0 0;
+.titleli {
+  margin: 3px 0 3px 0;
+  list-style-type: disc;
 }
 
-.ul-3 {
-  padding: 0 0 0 0;
+.ulinner {
+  margin: 0 0 0 15px;
+  list-style-type: disc;
 }
 
-.ul-4 {
-  padding: 0 0 0 0;
+.ulnested {
+  list-style-type: circle;
+  margin: 0 0 0 20px;
+}
+
+.nestedli {
+  list-style-type: circle;
 }
 
 /* Detail-Summary attributes */
 
 details summary {
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.1);
   display: block;
 }
-
-details summary:hover {
-  background-color: rgba(0, 0, 0, 0.15);
-}
-
 
 /* Narrow mobile phones: */
 
 [class*="col-"] {
   float: left;
 }
-.col-1 {width: 100%;} /* table 1 */
+.col-1 {width: 100%; margin: 10px 0 15px 0;} /* table 1 */
 .col-2 {width: 86%;} /*name*/
 .col-3 {width: 10%;} /* menu */
 .col-4 {width: 100%;} /* table 2 */
@@ -346,27 +383,34 @@ details summary:hover {
     padding: 10px 0 0 0;
   }
   .datestart {
-    width: 77px;
+    width: 72px;
   }
   
   .datedash {
-    width: 14 px;
+    width: 15 px;
   }
   .dspace {
-    width: 40px;
+    width: 30px;
+  }
+  .dateend {
+    width: 75px;
   }
 
   .rsmall {
     font-size: inherit;
   }
 
+  .bannerlabel {
+    font-size: 80%;
+  }
 
-  .col-1 {width: 100%;} /* table 1 */
+
+  .col-1 {width: 93%;} /* table 1 */
   .col-2 {width: 94%;} /*name*/
   .col-3 {width: 6%;} /* menu */
   .col-4 {width: 100%;} /* table 2 */
   .col-5 {width: 100%;} /* main */
-  .col-6 {width: 100%; margin-bottom: 20px} /* table 3 */
+  .col-6 {width: 670px; margin-bottom: 20px} /* table 3 */
   .col-7 {width: 100%;} /* main blocks */
   .col-8 {width: 100%;} /* cr frame */
   .col-9 {width: 100%;} /* main contents */
@@ -392,22 +436,25 @@ details summary:hover {
     padding: 10px 0 0 0;
   }
   .datestart {
-    width: 77px;
+    width: 73px;
   }
   .dspace {
-    width: 25px;
+    width: 20px;
   }
   .datedash {
-    width: 14 px;
+    width: 20px;
+  }
+  .dateend {
+    width: 74px;
   }
 
 
-  .col-1 {width: 100%;} /* table 1 */
+  .col-1 {width: 600px;} /* table 1 */
   .col-2 {width: 94.5%;} /*name*/
   .col-3 {width: 5.5%;} /* menu */
   .col-4 {width: 100%;} /* table 2 */
   .col-5 {width: 100%;} /* main */
-  .col-6 {width: 100%; margin-bottom: 20px;} /* table 3 */
+  .col-6 {width: 657px; margin-bottom: 20px;} /* table 3 */
   .col-7 {width: 100%;} /* main blocks */
   .col-8 {width: 92%;} /* cr frame */
   .col-9 {width: 100%;} /*main contents*/
@@ -428,29 +475,37 @@ details summary:hover {
     font-size: 24px;
   }
   h2 {
-    font-size: 20px;
+    font-size: 22px;
   }
   .cr {
   font-size: 12px;
   }
   .datestart {
-    width: 68px;
+    width: 63px;
   }
   .datedash {
     width: 13.5px;
   }
+  .dateend {
+    width: 65px;
+  }
   .dspace {
-    width: 60px;
+    width: 30px;
+  }
+  
+
+  .bannerlabel {
+    font-size: 100%;
   }
   
 
 
-  .col-1 {width: 100%;} /* table 1 */
+  .col-1 {width: 610px;} /* table 1 */
   .col-2 {width: 94.5%;} /*name*/
   .col-3 {width: 5.5%;} /* menu */
   .col-4 {width: 100%;} /* table 2 */
-  .col-5 {width: 700px;} /* main */
-  .col-6 {width: 100%; margin-bottom: 20px} /* table 3 */
+  .col-5 {width: 750px;} /* main */
+  .col-6 {width: 80%; margin-bottom: 20px} /* table 3 */
   .col-7 {width: 100%;} /* main blocks*/
   .col-8 {width: 92%;} /* cr frame */
   .col-9 {width: 100%;} /*main contents*/
@@ -477,22 +532,25 @@ details summary:hover {
   font-size: 14px;
   }
   .datestart {
-    width: 77px;
+    width: 73px;
   }
   
   .datedash {
     width: 14px;
   }
   .dspace {
-    width: 100px;
+    width: 50px;
+  }
+  .dateend {
+    width: 75px;
   }
 
-  .col-1 {width: 100%;} /* table 1 */
+  .col-1 {width: 750px;} /* table 1 */
   .col-2 {width: 94.5%;} /*name*/
   .col-3 {width: 5.5%;} /* menu */
   .col-4 {width: 100%;} /* table 2 */
-  .col-5 {width: 1000px} /* main */
-  .col-6 {width: 100%; margin-bottom: 20px;} /* table 3 */
+  .col-5 {width: 850px} /* main */
+  .col-6 {width: 680px; margin-bottom: 20px;} /* table 3 */
   .col-7 {width: 100%;} /* main blocks */
   .col-8 {width: 92%;} /* cr frame */
   .col-9 {width: 100%;} /*main contents*/
@@ -511,6 +569,26 @@ details summary:hover {
     html, body {
       overflow: visible;
 	    position: relative;
+    }
+    .rsmall {
+      font-size: inherit;
+    }
+    .col-11 {width: 70%}
+    .datestart {width: 90px}
+    /* .banner {height: 0;} */
+    .bannerimg {height: 0;}
+    .datestart {
+      width: 72px;
+    }
+    
+    .datedash {
+      width: 15 px;
+    }
+    .dspace {
+      width: 40px;
+    }
+    .dateend {
+      width: 74px;
     }
 }
 
