@@ -17,9 +17,13 @@ html, body {
 body {
   margin: 0px;
   background-color: rgba(129, 183, 255, 0.3);
+  /* background-color: #ffffff; */
   color: rgb(0, 0, 0);
   font-family: 'Helvatica', 'Arial', 'Gulim',  sans-serif;
+  text-align: justify;
+  hyphens: auto
 }
+
 
 a:link {
   color: rgb(0, 0, 0);
@@ -51,26 +55,63 @@ h2 {
   /*color: rgb(255, 200, 0); */
   font-size: 22px;
   line-height: 1px;
-  /* margin: 30px 0 0 0; */
+  margin: 0 0 27px 0;
   text-align: left;
-  /* vertical-align: text-top; */
 }
 
 h3 {
   font-size: inherit;
-  margin: 30px 0 0 0;
+  margin: 17px 0 0 0;
   /* line-height: 5px; */
   text-align: left;
 }
 
 .banner {
   position: relative;
+  border-style: ridge;
+  border-width: medium;
+  border-radius: 20px 0px 20px 0px;
+  line-height: 0;
+  overflow: hidden;
+  /* vertical-align: middle; */
+  background-color: rgba(45, 111, 244, 0.3);
+  text-align: right;
+}
+
+.bannerimgdiv {
+  position: relative;
+  margin-left: auto;
+  display: inline-block;
+  width: 83%;
+  border-style: none none none groove;
+  border-width: medium;
 }
 
 .bannerimg {
   width: 100%;
-  border-radius: 0px;
+  aspect-ratio: 5568/1005;
+  margin: 0;
+  padding: 0;
   display: block;
+  cursor: pointer;
+}
+
+.bannerlogodiv {
+  display: block;
+  width: 17%;
+  position: absolute;
+  top:50%;
+  /* border-style: groove; */
+}
+
+.institutelogo {
+  width: 85%;
+  display: block;
+  cursor: pointer;
+  position:absolute;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  /* border-style: groove; */
 }
 
 .bannertext {
@@ -95,7 +136,8 @@ h3 {
 
 
 .namecol {
-  padding: 5px 0 0 0;
+  margin: 0 0 8px 0;
+  padding: 10px 0 0 0;
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
@@ -104,6 +146,7 @@ h3 {
 .infocol {
   padding: 3px 0 0 0;
 }
+
 
 .photoframe{
   background-color: rgba(0,0,185,0);
@@ -176,7 +219,6 @@ h3 {
 
 
 .main {
-  background-color:rgba(255,255,255,1);
   border: 0px solid;
   border-radius: 0px;
   padding: 0 0 0 0;
@@ -189,9 +231,18 @@ h3 {
 }
 
 .maincts {
-  padding: 7px 0 0 10px;
+  background-color:rgba(255,255,255,1);
+  padding: 15px 0 15px 25px;
+  margin: 15px 0 50px 0;
+  border-radius: 10px;
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2);
+  /* border-style: groove; */
 }
 
+.intropar {
+  padding-right: 40px;
+  margin-bottom: 0px;
+}
 
 .linkbtn {
   cursor: default;
@@ -207,6 +258,7 @@ h3 {
   color: rgb(255, 255, 255);
   background-color: rgba(54, 93, 177, 1);
 }
+
 
 
 
@@ -262,7 +314,7 @@ table {
   width: 30px;
 }
 .introtable {
-  margin: 0 0 14px 0;
+  margin: 0 0 9px 0;
 }
 
 .introrow {
@@ -270,8 +322,12 @@ table {
   text-align: left;
 }
 
-.itemp {
-  margin: 3px 0 3px 0; 
+.tablediv {
+  padding-right: 30px;
+}
+
+.teachtable {
+  margin-bottom: 20px;
 }
 
 
@@ -279,13 +335,25 @@ table {
 
 /* horizontal rule attributes*/
 hr {
-  border: 1.8px solid;
-  color: rgb(54, 93, 177);
+  border: 0px solid;
+  background-color: rgba(54, 93, 177, 0.2);
   /* color: rgb(255, 200, 0); */
   visibility: visible; 
-  width: 100px;
+  height: 1px;
+  /* padding: 0 0 0 0; */
+  /* width: 100px; */
   /* visibility: hidden; */
-  margin: 30px auto 40px auto;
+  /* margin: 20px auto 20px auto; */
+  /* margin: 17px auto 17px auto; */
+}
+
+hr.mainhr {
+  margin: 30px 10px 10px 0;
+  visibility: hidden;
+}
+
+hr.introhr {
+  margin: 30px 40px 20px 0;
 }
 
 /* list attributes*/
@@ -294,30 +362,32 @@ ul {
 }
 
 .mainli {
-  margin: 15px 0 0 0;
+  margin: 12.5px 0 0 0;
   list-style-type: disc;
 }
 
 
 .titleli {
-  margin: 3px 0 3px 0;
+  margin: 2px 0 0 0;
+  list-style-type: none;
+}
+
+.outerli {
+  margin: 10px 0 10px 0;
   list-style-type: disc;
 }
 
 .ulinner {
-  margin: 0 0 0 15px;
-  list-style-type: disc;
+  margin: 0 40px 0 5px;
 }
 
-.ulnested {
-  list-style-type: circle;
-  margin: 0 0 0 20px;
+.ulouter {
+  margin: 5px 0 0 5px;
 }
 
-.nestedli {
-  list-style-type: circle;
+.ultitle {
+  margin: 0 0 0 0;
 }
-
 /* Detail-Summary attributes */
 
 details summary {
@@ -335,8 +405,8 @@ details summary {
 .col-3 {width: 10%;} /* menu */
 .col-4 {width: 100%;} /* table 2 */
 .col-5 {width: 100%;} /* main */
-.col-6 {width: 100%; margin-bottom: 20px} /* table 3 */
-.col-7 {width: 100%; padding-right: 5px;} /* main blocks */
+.col-6 {width: 100%;} /* table 3 */
+.col-7 {width: 100%;} /* main blocks */
 .col-8 {width: 100%;} /* copyright frame */
 .col-9 {width: 100%;} /* main contents */
 .col-10 {width: 175px;} /* photo menu frame */
@@ -359,8 +429,8 @@ details summary {
   .col-3 {width: 10%;} /* menu */
   .col-4 {width: 100%;} /* table 2 */
   .col-5 {width: 100%;} /* main */
-  .col-6 {width: 100%; margin-bottom: 20px} /* table 3 */
-  .col-7 {width: 100%; padding-right: 5px;} /* main blocks */
+  .col-6 {width: 100%;} /* table 3 */
+  .col-7 {width: 100%;} /* main blocks */
   .col-8 {width: 100%;} /* copyright frame */
   .col-9 {width: 100%;} /* main contents */
   .col-10 {width: 175px;} /* photo menu frame */
@@ -373,8 +443,21 @@ details summary {
 @media only screen and (min-width: 550px) {
 /* Tablet portrait mode */
   .main {
-  font-size: 16px;
-  padding: 0 0 0 0;
+    font-size: 16px;
+    padding: 0 0 0 0;
+  }
+  .maincts{
+    padding-left: 40px;
+    padding-bottom: 20px;
+  }
+  .intropar{
+    padding-right: 55px;
+  }
+  .ulinner {
+    margin: 0 55px 0 15px;
+  }
+  .ulouter {
+    margin: 0 0 5px 15px;
   }
   .cr {
   font-size: 14px;
@@ -399,6 +482,10 @@ details summary {
   .rsmall {
     font-size: inherit;
   }
+  
+  .banner {
+    border-radius: 35px 0px 35px 0px;
+  }
 
   .bannerlabel {
     font-size: 80%;
@@ -410,11 +497,11 @@ details summary {
   .col-3 {width: 6%;} /* menu */
   .col-4 {width: 100%;} /* table 2 */
   .col-5 {width: 100%;} /* main */
-  .col-6 {width: 670px; margin-bottom: 20px} /* table 3 */
+  .col-6 {width: 100%;} /* table 3 */
   .col-7 {width: 100%;} /* main blocks */
   .col-8 {width: 100%;} /* cr frame */
   .col-9 {width: 100%;} /* main contents */
-  .col-10 {width: 175px;} /* photo menu frame */
+  .col-10 {width: 200px;} /* photo menu frame */
   .col-11 {width: 75%;} /* infocol */
   .col-12 {width: 100%;} /* banner */
 }
@@ -428,12 +515,11 @@ details summary {
   font-size: 16px;
   padding: 0 0 0 0;
   }
-
   .cr {
   font-size: 14px;
   }
   .infocol {
-    padding: 10px 0 0 0;
+    padding: 10px 0 0 7px;
   }
   .datestart {
     width: 73px;
@@ -454,7 +540,7 @@ details summary {
   .col-3 {width: 5.5%;} /* menu */
   .col-4 {width: 100%;} /* table 2 */
   .col-5 {width: 100%;} /* main */
-  .col-6 {width: 657px; margin-bottom: 20px;} /* table 3 */
+  .col-6 {width: 100%;} /* table 3 */
   .col-7 {width: 100%;} /* main blocks */
   .col-8 {width: 92%;} /* cr frame */
   .col-9 {width: 100%;} /*main contents*/
@@ -471,11 +557,14 @@ details summary {
   .main {
     font-size: 14px;
   }
+  .maincts {
+    margin: 35px 0 35px 0;
+  }
   h1 {
     font-size: 24px;
   }
   h2 {
-    font-size: 22px;
+    font-size: 20px;
   }
   .cr {
   font-size: 12px;
@@ -504,12 +593,12 @@ details summary {
   .col-2 {width: 94.5%;} /*name*/
   .col-3 {width: 5.5%;} /* menu */
   .col-4 {width: 100%;} /* table 2 */
-  .col-5 {width: 750px;} /* main */
-  .col-6 {width: 80%; margin-bottom: 20px} /* table 3 */
+  .col-5 {width: 755px;} /* main */
+  .col-6 {width: 80%;} /* table 3 */
   .col-7 {width: 100%;} /* main blocks*/
   .col-8 {width: 92%;} /* cr frame */
   .col-9 {width: 100%;} /*main contents*/
-  .col-10 {width: 175px;} /* photo menu frame */
+  .col-10 {width: 180px;} /* photo menu frame */
   .col-11 {width: 450px;} /* infocol*/
   .col-12 {width: 100%;} /*banner*/
 }
@@ -522,11 +611,17 @@ details summary {
   .main {
     font-size: 16px;
   }
+  .maincts {
+    margin: 45px 0 45px 0;
+  }
   h1 {
     font-size: 26px;
   }
   h2 {
     font-size: 22px;
+  }
+  hr {
+    margin: 25px auto 25px auto;
   }
   .cr {
   font-size: 14px;
@@ -549,12 +644,12 @@ details summary {
   .col-2 {width: 94.5%;} /*name*/
   .col-3 {width: 5.5%;} /* menu */
   .col-4 {width: 100%;} /* table 2 */
-  .col-5 {width: 850px} /* main */
-  .col-6 {width: 680px; margin-bottom: 20px;} /* table 3 */
+  .col-5 {width: 890px} /* main */
+  .col-6 {width: 680px;} /* table 3 */
   .col-7 {width: 100%;} /* main blocks */
   .col-8 {width: 92%;} /* cr frame */
   .col-9 {width: 100%;} /*main contents*/
-  .col-10 {width: 180px;} /* photo menu frame */
+  .col-10 {width: 200px;} /* photo menu frame */
   .col-11 {width: 400px;} /* infocol*/
   .col-12 {width: 100%;}  /*banner*/
 }
@@ -565,6 +660,7 @@ details summary {
 @media print {
     .main {
         overflow: visible;
+        font-size: 13.5px;
     }
     html, body {
       overflow: visible;
@@ -573,9 +669,16 @@ details summary {
     .rsmall {
       font-size: inherit;
     }
+    .maincts {
+      margin: 0;
+    }
+    .namecol {
+      padding: 0;
+    }
+    .col-10 {width: 142px;} /* photo menu frame */
     .col-11 {width: 70%}
     .datestart {width: 90px}
-    /* .banner {height: 0;} */
+    .banner {border-style: none;}
     .bannerimg {height: 0;}
     .datestart {
       width: 72px;
