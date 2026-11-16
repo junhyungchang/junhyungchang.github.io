@@ -16,14 +16,12 @@ html, body {
 
 body {
   margin: 0px;
-  background-color: rgba(129, 183, 255, 0.2);
-  /* background-color: #ffffff; */
+  /* background-color: rgba(129, 183, 255, 0); */
+  background-color: #ffffff;
   color: rgb(0, 0, 0);
-  font-family: 'Helvatica', 'Arial', 'Gulim',  sans-serif;
-  /* font-family: Georgia, Cambria, "Times New Roman", Times, serif; */
-  /* font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; */
-  text-align: justify;
-  hyphens: auto
+  font-family: Georgia, "Times New Roman",  serif;
+  font-variant-numeric: lining-nums;
+  hyphens: auto;
 }
 
 
@@ -56,91 +54,20 @@ h1 {
 
 h2 {
   font-size: 1em;
-  margin-top: 0.5em;
-  margin-bottom: 0;
+  margin: 0 0 0 0;
   font-weight: normal;
 }
 
 h3 {
-  font-size: 1.2em;
-  margin: 25px 0 0 0;
-  /* line-height: 5px; */
-  text-align: left;
+  font-size: 1.35em;
+  margin: 1.5em 0 0 0;
   font-variant: small-caps;
-  /* text-transform: lowercase;  */
   font-weight: normal;
-  text-shadow: 0.3px 0 0 currentColor;
-}
-
-.firsth3 {
-  margin: 10px 0 0 0;
+  /* text-shadow: 0.2px 0 0 currentColor; */
 }
 
 .highlight-name {
   text-shadow: 0.4px 0 0 currentColor;
-}
-
-.banner {
-  position: relative;
-  border-style: ridge;
-  border-width: medium;
-  border-radius: 20px 0px 20px 0px;
-  line-height: 0;
-  overflow: hidden;
-  /* vertical-align: middle; */
-  background-color: rgba(45, 111, 244, 0.3);
-  text-align: right;
-}
-
-.bannerimgdiv {
-  position: relative;
-  margin-left: auto;
-  display: inline-block;
-  width: 83%;
-  border-style: none none none groove;
-  border-width: medium;
-}
-
-.bannerimg {
-  width: 100%;
-  aspect-ratio: 5568/1005;
-  margin: 0;
-  padding: 0;
-  display: block;
-  cursor: pointer;
-}
-
-.bannerlogodiv {
-  display: block;
-  width: 17%;
-  position: absolute;
-  top:50%;
-  /* border-style: groove; */
-}
-
-.institutelogo {
-  width: 85%;
-  display: block;
-  cursor: pointer;
-  position:absolute;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  /* border-style: groove; */
-}
-
-.bannertext {
-  width: 100%;
-  background-color: rgba(90, 51, 0, 0.356);
-  font-size: 10px;
-  color: #000000;
-  text-align: right;
-}
-
-.bannerlabel {
-  position: absolute;
-  bottom: 5px;
-  right: 8px;
-  font-size: 50%;
 }
 
 .cr {
@@ -148,24 +75,28 @@ h3 {
   margin: 20px 0 5px 0;
 }
 
-
-.namecol {
-  margin: 1.7em 0 0.6em 0;
+.metabox {
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1em;
+  margin: 0 0 0 0;
 }
 
-.namecol span:last-child {
-  margin-left: auto;
+
+.namecol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
 }
 
 .nameitem {
   font-size: 1.8em;
+  margin-bottom: 0.5em;
 }
 
-.titlecol {
-  padding: 0 0 0 0;
+.photocol {
+  display: flex;
 }
 
 .link-container {
@@ -173,6 +104,8 @@ h3 {
   flex-wrap: wrap;
   gap: 1.6rem;
   width: 100%;
+  justify-content: flex-start;
+  margin-top: 0.5em;
 }
 
 .pub-link-container {
@@ -183,14 +116,14 @@ h3 {
 }
 
 .photo-intro {
-  margin: 1.5em 0 0.5em 0;
+  margin: 0 0 0.5em 0;
   display: flex;
+  flex-direction: column-reverse;
   align-items: flex-start;
 }
 
 .infocol {
-  padding: 0 0 0 15px;
-  margin: 0;
+  margin: 0 0 0 0;
 }
 
 .infocol p:first-child {
@@ -198,15 +131,10 @@ h3 {
   padding-top: 0 !important;
 }
 
-.intropar {
-  margin-bottom: 0.5em;
-}
 
 
 .photoframe{
   background-color: rgba(0,0,185,0);
-  height: auto;
-  display: block;
 }
 
 
@@ -269,7 +197,7 @@ h3 {
   border: 0px solid;
   border-radius: 0px;
   padding: 0 0 0 0;
-  margin: 0px;
+  margin: 0;
   font-size: 16px;
   line-height: 1.4;
   min-height: 100%;
@@ -279,10 +207,11 @@ h3 {
 
 .maincts {
   background-color:rgb(255, 255, 255);
-  padding: 5px 40px 15px 25px;
-  margin: 15px 0 50px 0;
-  box-shadow: 0px 1.5px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  padding: 0 22px 0 20px;
+  margin: 2em 0 2em 0;
+  text-align: left;
+  /* box-shadow: 0px 1.5px 10px rgba(0, 0, 0, 0.1); */
+  /* border-radius: 10px; */
   /* border-style: groove; */
 }
 
@@ -302,89 +231,6 @@ h3 {
   color: rgb(255, 255, 255);
   background-color: rgba(54, 93, 177, 1);
 }
-
-
-
-
-/* table attributes */
-table {
-  border-collapse: collapse;
-  }
-
-.rsmall {
-  font-size: inherit;
-} /* small font rows */
-  
-.teachrows {
-  text-align: left;
-  border-bottom: 1px solid #00000020;
-  padding: 1.5px 1.5px 1.5px 1.5px;
-}
-
-.biorows {
-  text-align: left;
-  /* vertical-align: top; */
-  /* border-bottom: 1px solid #00000020; */
-  padding: 1.5px 1.5px 1.5px 0px;
-}
-
-.tdhead {
-  text-align: left;
-  border-bottom: 1.2px solid #00000055;
-  /* padding: 1.5px 0 1.5px 1px; */
-}
-
-.biohead {
-  text-align: left;
-  /* border-bottom: 1.2px solid #00000055; */
-  /* padding: 1.5px 0 1.5px 1px; */
-}
-
-.datestart {
-  width: 30px;
-  /* border: 1px solid black; */
-}
-
-.datedash {
-  width: 11px;
-  text-align: center;
-}
-
-.dspace {
-  width: 10px;
-}
-
-.dateend {
-  width: 30px;
-}
-
-.introtable {
-  margin: 0 0 9px 0;
-}
-
-.introrow {
-  vertical-align: text-top;
-  text-align: left;
-}
-
-.linktable {
-  margin: 0 0 9px 0;
-}
-
-.linkrow {
-  vertical-align: text-top;
-  text-align: left;
-  padding-right: 30px;
-}
-
-.tablediv {
-  padding-right: 30px;
-}
-
-.teachtable {
-  margin-bottom: 20px;
-}
-
 
 
 
@@ -418,7 +264,6 @@ ul {
 
 .mainli {
   margin: 12.5px 0 0 0;
-  list-style-type: disc;
 }
 
 
@@ -433,7 +278,9 @@ ul {
 }
 
 .ulinner {
-  margin: 0 0 0 5px;
+  list-style-type: none;
+  margin: 0 0 0 0;
+  padding: 0;
 }
 
 .ulouter {
@@ -501,12 +348,8 @@ details summary {
     font-size: 16px;
     padding: 0 0 0 0;
   }
-  .maincts{
-    padding-left: 30px;
-    padding-bottom: 20px;
-  }
-  .ulinner {
-    margin: 0 0 0 20px;
+  .maincts {
+    padding: 0 40px 0 35px;
   }
   .ulouter {
     margin: 0 0 5px 15px;
@@ -527,10 +370,6 @@ details summary {
   .dateend {
     width: 75px;
   }
-
-  .rsmall {
-    font-size: inherit;
-  }
   
   .banner {
     border-radius: 35px 0px 35px 0px;
@@ -550,8 +389,8 @@ details summary {
   .col-7 {width: 100%;} /* main blocks */
   .col-8 {width: 100%;} /* cr frame */
   .col-9 {width: 100%;} /* main contents */
-  .col-10 {width: 23%;} /* photo menu frame */
-  .col-11 {width: 76%;} /* infocol */
+  .col-10 {width: 25%;} /* photo menu frame */
+  .col-11 {width: 74%;} /* infocol */
   .col-12 {width: 100%;} /* banner */
 }
 
@@ -563,6 +402,13 @@ details summary {
   .main {
   font-size: 16px;
   padding: 0 0 0 0;
+  }
+  .metabox {
+    flex-direction: row;
+    gap: 0;
+  }
+  .nameitem {
+    font-size: 1.8em;
   }
   .cr {
   font-size: 14px;
@@ -603,9 +449,14 @@ details summary {
   .main {
     font-size: 15px;
   }
-  .maincts {
-    margin: 35px 0 35px 0;
+  
+  .photo-intro {
+    margin: 0.5em 0 0.5em 0;
+    flex-direction: row;
+    align-items: flex-start;
   }
+
+ 
   .cr {
   font-size: 12px;
   }
@@ -633,13 +484,13 @@ details summary {
   .col-2 {width: 100%;} /*name*/
   .col-3 {width: 5.5%;} /* menu */
   .col-4 {width: 100%;} /* table 2 */
-  .col-5 {width: 695px;} /* main */
+  .col-5 {width: 570px;} /* main */
   .col-6 {width: 80%;} /* table 3 */
   .col-7 {width: 100%;} /* main blocks*/
   .col-8 {width: 92%;} /* cr frame */
   .col-9 {width: 100%;} /*main contents*/
-  .col-10 {width: 23%;} /* photo menu frame */
-  .col-11 {width: 76%;} /* infocol*/
+  .col-10 {width: 33%;} /* photo menu frame */
+  .col-11 {width: 62%;} /* infocol*/
   .col-12 {width: 100%;} /*banner*/
 }
 
@@ -648,12 +499,6 @@ details summary {
   and (orientation: landscape) {
   /* For desktop: */
 
-  .main {
-    font-size: 16px;
-  }
-  .maincts {
-    margin: 45px 0 45px 0;
-  }
   .infocol p:first-child {
     margin-top: -3px !important;   
   }
@@ -678,13 +523,13 @@ details summary {
   .col-2 {width: 100%;} /*name*/
   .col-3 {width: 5.5%;} /* menu */
   .col-4 {width: 100%;} /* table 2 */
-  .col-5 {width: 750px} /* main */
+  .col-5 {width: 570px} /* main */
   .col-6 {width: 680px;} /* table 3 */
   .col-7 {width: 100%;} /* main blocks */
   .col-8 {width: 92%;} /* cr frame */
   .col-9 {width: 100%;} /*main contents*/
-  .col-10 {width: 22%;} /* photo menu frame */
-  .col-11 {width: 77%;} /* infocol*/
+  .col-10 {width: 33%;} /* photo menu frame */
+  .col-11 {width: 62%;} /* infocol*/
   .col-12 {width: 100%;}  /*banner*/
 }
 
@@ -700,14 +545,8 @@ details summary {
       overflow: visible;
 	    position: relative;
     }
-    .rsmall {
-      font-size: inherit;
-    }
     .maincts {
       margin: 0;
-    }
-    .namecol {
-      padding: 0;
     }
     .col-10 {width: 142px;} /* photo menu frame */
     .col-11 {width: 70%}
